@@ -1,5 +1,6 @@
-package com.ditracademy.travelagency2.core;
+package com.ditracademy.travelagency2.core.destination;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,13 +14,11 @@ import javax.persistence.Id;
 @Getter
 @Setter
 @NoArgsConstructor
-public class User {
+public class Destination {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String name;
-    private int age;
-
-
+    private String nom;
+    private String description;
 }
